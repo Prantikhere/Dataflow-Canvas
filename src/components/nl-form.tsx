@@ -63,7 +63,7 @@ export function NlForm({ setJob }: NlFormProps) {
   return (
     <Card className="mb-4 shadow-sm border">
       <CardHeader>
-        <CardTitle>Describe Your Data Pipeline</CardTitle>
+        <CardTitle className="text-xl md:text-2xl">Describe Your Data Pipeline</CardTitle>
         <CardDescription>
           Use plain English to define the steps of your ETL job. The AI will generate the workflow for you.
         </CardDescription>

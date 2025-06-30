@@ -18,7 +18,7 @@ export default function Home() {
             <Header />
             <div className="flex flex-1 overflow-hidden">
                 <MetadataPanel />
-                <main className="flex-1 flex flex-col p-4 lg:p-6 overflow-y-auto">
+                <main className="flex-1 flex flex-col p-2 sm:p-4 lg:p-6 overflow-y-auto">
                     <NlForm setJob={setJob} />
                     <WorkflowCanvas 
                       job={job} 

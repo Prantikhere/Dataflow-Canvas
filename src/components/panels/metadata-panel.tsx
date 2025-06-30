@@ -17,7 +17,7 @@ export function MetadataPanel() {
   }
 
   return (
-    <aside className="hidden md:flex flex-col w-80 bg-card border-r">
+    <aside className="hidden md:flex flex-col w-72 xl:w-80 bg-card border-r">
       <div className="p-4 border-b">
         <h2 className="text-xl font-semibold">Metadata</h2>
         <div className="relative mt-4">

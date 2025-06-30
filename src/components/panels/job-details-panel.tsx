@@ -37,7 +37,7 @@ export function JobDetailsPanel({ selectedStep, jobHistory, setSelectedStep }: J
 
   if (!selectedStep) {
     return (
-      <aside className="hidden lg:flex flex-col w-96 bg-card border-l items-center justify-center text-center p-8">
+      <aside className="hidden md:flex flex-col w-80 xl:w-96 bg-card border-l items-center justify-center text-center p-8">
         <div className="flex flex-col items-center justify-center h-full text-center p-8">
             <h3 className="text-lg font-semibold">Select a step</h3>
             <p className="text-muted-foreground">Click on a step in the workflow to see its details and configuration.</p>
@@ -47,7 +47,7 @@ export function JobDetailsPanel({ selectedStep, jobHistory, setSelectedStep }: J
   }
 
   return (
-    <aside className="hidden lg:flex flex-col w-96 bg-card border-l">
+    <aside className="hidden md:flex flex-col w-80 xl:w-96 bg-card border-l">
       <div className="p-4 border-b flex justify-between items-center">
         <h2 className="text-xl font-semibold">Details</h2>
         <Button variant="ghost" size="icon" onClick={() => setSelectedStep(null)}>

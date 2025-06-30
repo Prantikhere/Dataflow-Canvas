@@ -13,9 +13,9 @@ export function WorkflowCanvas({ job, setSelectedStep, selectedStep }: WorkflowC
   if (!job.steps || job.steps.length === 0) {
     return (
       <div className="flex-1 flex items-center justify-center rounded-lg border-2 border-dashed bg-card/50">
-        <div className="text-center">
-          <Wind className="mx-auto h-12 w-12 text-muted-foreground" />
-          <h3 className="mt-4 text-lg font-semibold">Your workflow is empty</h3>
+        <div className="text-center p-4">
+          <Wind className="mx-auto h-10 w-10 md:h-12 md:w-12 text-muted-foreground" />
+          <h3 className="mt-4 text-base md:text-lg font-semibold">Your workflow is empty</h3>
           <p className="text-muted-foreground">Use the input above to generate a workflow with AI.</p>
         </div>
       </div>
@@ -25,7 +25,7 @@ export function WorkflowCanvas({ job, setSelectedStep, selectedStep }: WorkflowC
   return (
     <div className="flex-1 flex flex-col p-4 rounded-lg bg-card/50 border">
        <div className="mb-6">
-        <h2 className="text-2xl font-bold tracking-tight">{job.name}</h2>
+        <h2 className="text-xl md:text-2xl font-bold tracking-tight">{job.name}</h2>
         <p className="text-muted-foreground">{job.description}</p>
        </div>
       <ScrollArea className="w-full whitespace-nowrap">

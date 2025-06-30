@@ -48,8 +48,8 @@ export function Header() {
       </Sheet>
       <div className="flex w-full items-center gap-4 md:ml-auto md:gap-2 lg:gap-4 justify-end">
         <Button className="bg-accent text-accent-foreground hover:bg-accent/90">
-            <PlusCircle className="mr-2 h-5 w-5" />
-            New Job
+            <PlusCircle className="h-5 w-5 md:mr-2" />
+            <span className="hidden md:inline">New Job</span>
         </Button>
         <DropdownMenu>
             <DropdownMenuTrigger asChild>
